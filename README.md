@@ -11,3 +11,8 @@ substack/node-chainsaw - to write modules with chainable-interfaces
 chjj/marked - to render the blog files
 substack/git-file - stream information about git
 express - server
+
+# Todo
+
+Make sure we don't look for a file that we modified or added then later removed
+
