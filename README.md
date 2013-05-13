@@ -14,5 +14,6 @@ express - server
 
 # Todo
 
-Make sure we don't look for a file that we modified or added then later removed
+* Make sure we don't look for a file that we modified or added then later removed
+* Refactor libraries here into npm modules
 
