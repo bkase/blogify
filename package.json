@@ -7,7 +7,8 @@
     "express": "~3.2.4",
     "jasmine-node": "~1.7.0",
     "lodash": "~1.2.1",
-    "marked": "~0.2.8"
+    "marked": "~0.2.8",
+    "chainsaw": "~0.1.0"
   },
   "devDependencies": {},
   "scripts": {
