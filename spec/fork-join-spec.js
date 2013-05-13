@@ -67,5 +67,22 @@ describe("Simple fork-join library", function() {
 
     waitsFor(function() { return isDone; }, "waiting...", 500);
   });
+
+  it("should work with unit results if ignoreErrors", function() {
+    var isDone = false;
+    forkJoin({ ignoreErrors: true })
+        .fork([1,5,3,2], function(elem, cb) {
+          setTimeout(function() {
+            cb();             
+          }, elem * 5);
+        })
+        .join(function(results) {
+          expect(JSON.stringify(results)).toEqual(JSON.stringify([undefined, undefined, undefined, undefined]));
+          isDone = true;
+        });
+
+    waitsFor(function() { return isDone; }, "waiting...", 500);
+  });
+
 });
 
