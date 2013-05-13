@@ -1,0 +1,7 @@
+Just a test file.
+This is to test streaming stuff,
+
+because we can create a read stream from this file.
+
+that's it.
+
