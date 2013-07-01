@@ -1,0 +1,7 @@
+{
+  "name": "stubs",
+  "version": "0.0.0",
+  "dependencies": {
+    "Ribs": "~1.0.3"
+  }
+}
